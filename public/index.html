@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Transport Converter</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Vehicle Transport Converter</h1>
+    </header>
+    <main>
+      <section class="input-section">
+        <input type="number" id="distance" placeholder="Enter distance (km)" />
+        <div id="vehicle-selection" class="vehicle-selection">
+          <label>
+            <input type="radio" name="vehicle" value="Maruti Suzuki Alto"> 
+            <img src="images/maruti_suzuki_alto.jpg" alt="Maruti Suzuki Alto">
+            <span>Maruti Suzuki Alto</span>
+          </label>
+          <label>
+            <input type="radio" name="vehicle" value="Hyundai i20"> 
+            <img src="images/hyundai_i20.jpg" alt="Hyundai i20">
+            <span>Hyundai i20</span>
+          </label>
+          <label>
+            <input type="radio" name="vehicle" value="Tata Nexon"> 
+            <img src="images/tata_nexon.jpg" alt="Tata Nexon">
+            <span>Tata Nexon</span>
+          </label>
+          <label>
+            <input type="radio" name="vehicle" value="Honda City"> 
+            <img src="images/honda_city.jpg" alt="Honda City">
+            <span>Honda City</span>
+          </label>
+          <label>
+            <input type="radio" name="vehicle" value="Mahindra Thar"> 
+            <img src="images/mahindra_thar.jpg" alt="Mahindra Thar">
+            <span>Mahindra Thar</span>
+          </label>
+          <label>
+            <input type="radio" name="vehicle" value="Toyota Innova Crysta"> 
+            <img src="images/toyota_innova_crysta.jpg" alt="Toyota Innova Crysta">
+            <span>Toyota Innova Crysta</span>
+          </label>
+          <label>
+            <input type="radio" name="vehicle" value="Kia Seltos"> 
+            <img src="images/kia_seltos.jpg" alt="Kia Seltos">
+            <span>Kia Seltos</span>
+          </label>
+          <label>
+            <input type="radio" name="vehicle" value="Renault Kwid"> 
+            <img src="images/renault_kwid.jpg" alt="Renault Kwid">
+            <span>Renault Kwid</span>
+          </label>
+          <label>
+            <input type="radio" name="vehicle" value="Ford EcoSport"> 
+            <img src="images/ford_ecosport.jpg" alt="Ford EcoSport">
+            <span>Ford EcoSport</span>
+          </label>
+          <label>
+            <input type="radio" name="vehicle" value="Tata Tiago"> 
+            <img src="images/tata_tiago.jpg" alt="Tata Tiago">
+            <span>Tata Tiago</span>
+          </label>
+        </div>
+        <button id="calculate-btn">Calculate</button>
+        <button id="compare-btn">Compare All Options</button>
+      </section>
+      <section class="result-section">
+        <div id="travel-time" class="result-item"></div>
+        <div id="fuel-consumption" class="result-item"></div>
+      </section>
+      <section class="comparison-section">
+        <table id="comparison-table">
+          <!-- Table headers and rows will be populated dynamically -->
+        </table>
+      </section>
+    </main>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
